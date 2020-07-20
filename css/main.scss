@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,600&display=swap');
+
+@import "variables";
+@import "navbar";
+@import "footer";
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    .container-fluid{
+       width: 85%;
+    }
+}
+.foto-principal{
+    border: 1px solid $white;
+}
+.list-group{
+    :hover {
+        background-color: $primary;
+        color: $white;
+    }   
+
+}
+.list-group-item-action {
+    display: block;
+    overflow: hidden;
+    padding: 20px;
+    text-align: left;
+    background-color: $thirdColor;
+    color: $primary;
+    border: 1px solid $white;
+    
+    h4 {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container-fluid{
+        width: 100%;
+        margin: 0;
+    }
+    .foto-principal{
+        border: none;
+        width: 100%;
+    }
+    .list-group-item-action{
+        h4 {
+            font-size: 1.2rem;
+        }
+    }
+    .fab, 
+    .far, 
+    fas {
+        font-size: 55px;
+    }
+    .list-group{
+        margin: 15px;
+    }
+    
+}
+
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    h4 {
+        font-size: 1.6rem;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    h4 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    h4 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    h4 {
+        font-size: 1.6rem;
+    }    
+}
